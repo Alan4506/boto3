@@ -16,7 +16,7 @@ Boto (pronounced boh-toh) was named after the fresh water dolphin native to the 
 
 Notices
 -------
-
+hope
 On 2026-04-29, support for Python 3.9 will end for Boto3. This follows the
 Python Software Foundation `end of support <https://peps.python.org/pep-0596/#lifespan>`__
 for the runtime which occurred on 2025-10-31.
