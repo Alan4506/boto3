@@ -2,6 +2,37 @@
 CHANGELOG
 =========
 
+1.42.75
+=======
+
+* api-change:``bedrock-agentcore-control``: [``botocore``] Adds SDK support for 1) Persist session state in AgentCore Runtime via filesystemConfigurations in CreateAgentRuntime, UpdateAgentRuntime, and GetAgentRuntime APIs, 2) Optional name-based filtering on AgentCore ListBrowserProfiles API.
+* api-change:``gamelift``: [``botocore``] Amazon GameLift Servers launches UDP ping beacons in the Beijing and Ningxia (China) Regions to help measure real-time network latency for multiplayer games. The ListLocations API is now available in these regions to provide endpoint domain and port information as part of the locations list.
+* api-change:``mediapackagev2``: [``botocore``] Reduces the minimum allowed value for startOverWindowSeconds from 60 to 0, allowing customers to effectively disable the start-over window.
+* api-change:``opensearchserverless``: [``botocore``] Adds support for updating the vector options field for existing collections.
+* api-change:``pcs``: [``botocore``] This release adds support for custom slurmdbd and cgroup configuration in AWS PCS. Customers can now specify slurmdbd and cgroup settings to configure database accounting and reporting for their HPC workloads, and control resource allocation and limits for compute jobs.
+* api-change:``rds``: [``botocore``] Adds support in Aurora PostgreSQL serverless databases for express configuration based creation through WithExpressConfiguration in CreateDbCluster API, and for restoring clusters using RestoreDBClusterToPointInTime and RestoreDBClusterFromSnapshot APIs.
+
+
+1.42.74
+=======
+
+* api-change:``batch``: [``botocore``] AWS Batch AMI Visibility feature support. Adds read-only batchImageStatus to Ec2Configuration to provide visibility on the status of Batch-vended AMIs used by Compute Environments.
+* api-change:``connectcases``: [``botocore``] You can now use the UpdateRelatedItem API to update the content of comments and custom related items associated with a case.
+* api-change:``lightsail``: [``botocore``] Add support for tagging of ContactMethod resource type
+* api-change:``omics``: [``botocore``] Adds support for batch workflow runs in Amazon Omics, enabling users to submit, manage, and monitor multiple runs as a single batch. Includes APIs to create, cancel, and delete batches, track submission statuses and counts, list runs within a batch, and configure default settings.
+
+
+1.42.73
+=======
+
+* api-change:``backup``: [``botocore``] Fix Typo for S3Backup Options ( S3BackupACLs to BackupACLs)
+* api-change:``dynamodb``: [``botocore``] Adding ReplicaArn to ReplicaDescription of a global table replica
+* api-change:``endpoint-rules``: [``botocore``] Update endpoint-rules client to latest version
+* api-change:``opensearch``: [``botocore``] Added support for Amazon Managed Service for Prometheus (AMP) as a connected data source in OpenSearch UI. Now users can analyze Prometheus metrics in OpenSearch UI without data copy.
+* api-change:``verifiedpermissions``: [``botocore``] Adds support for Policy Store Aliases, Policy Names, and Policy Template Names. These are customizable identifiers that can be used in place of Policy Store ids, Policy ids, and Policy Template ids respectively in Amazon Verified Permissions APIs.
+* bugfix:s3: [``botocore``] Fix aws-chunked requests with non-seekable streams sending both ``Content-Length`` and ``Transfer-Encoding: chunked``, which violated HTTP/1.1 (RFC 7230) and caused ``SignatureDoesNotMatch`` errors.
+
+
 1.42.72
 =======
 
