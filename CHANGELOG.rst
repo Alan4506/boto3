@@ -2,6 +2,44 @@
 CHANGELOG
 =========
 
+1.42.79
+=======
+
+* api-change:``appstream``: [``botocore``] Add support for URL Redirection
+* api-change:``autoscaling``: [``botocore``] Adds support for new instance lifecycle states introduced by the instance lifecycle policy and replace root volume features.
+* api-change:``bedrock-agentcore``: [``botocore``] Adds Ground Truth support for AgentCore Evaluations (Evaluate)
+* api-change:``deadline``: [``botocore``] AWS Deadline Cloud now supports three new fleet auto scaling settings. With scale out rate, you can configure how quickly workers launch. With worker idle duration, you can set how long workers wait before shutting down. With standby worker count, you can keep idle workers ready for fast job start.
+* api-change:``devops-agent``: [``botocore``] AWS DevOps Agent General Availability.
+* api-change:``ecs``: [``botocore``] Adding Local Storage support for ECS Managed Instances by introducing a new field "localStorageConfiguration" for CreateCapacityProvider and UpdateCapacityProvider APIs.
+* api-change:``endpoint-rules``: [``botocore``] Update endpoint-rules client to latest version
+* api-change:``gamelift``: [``botocore``] Update CreateScript API documentation.
+* api-change:``lakeformation``: [``botocore``] Add setSourceIdentity to DataLakeSettings Parameters
+* api-change:``logs``: [``botocore``] Adds Lookup Tables to CloudWatch Logs for log enrichment using CSV key-value data with KMS encryption support.
+* api-change:``opensearch``: [``botocore``] Added Cluster Insights API's In OpenSearch Service SDK.
+* api-change:``partnercentral-account``: [``botocore``] KYB Supplemental Form enables partners who fail business verification to submit additional details and supporting documentation through a self-service form, triggering an automated re-verification without requiring manual intervention from support teams.
+* api-change:``sagemaker``: [``botocore``] Added support for placement strategy and consolidation for SageMaker inference component endpoints. Customers can now configure how inference component copies are distributed across instances and availability zones (AZs), and enable automatic consolidation to optimizes resource utilization.
+* enhancement:``s3``: [``botocore``] Added support for opting out of Amazon S3 Express session authentication via the new ``disable_s3_express_session_auth`` S3 client configuration setting, or the new ``AWS_S3_DISABLE_EXPRESS_SESSION_AUTH`` environment variable, or the ``s3_disable_express_session_auth`` shared configuration setting.
+
+
+1.42.78
+=======
+
+* api-change:``bedrock-agentcore``: [``botocore``] Adding AgentCore Code Interpreter Node.js Runtime Support with an optional runtime field
+* api-change:``bedrock-agentcore-control``: [``botocore``] Adds support for custom code-based evaluators using customer-managed Lambda functions.
+* api-change:``neptunedata``: [``botocore``] Minor formatting changes to remove unnecessary symbols.
+* api-change:``omics``: [``botocore``] AWS HealthOmics now supports VPC networking, allowing users to connect runs to external resources with NAT gateway, AWS VPC resources, and more. New Configuration APIs support configuring VPC settings. StartRun API now accepts networkingMode and configurationName parameters to enable VPC networking.
+
+
+1.42.77
+=======
+
+* api-change:``bcm-data-exports``: [``botocore``] With this release we are providing an option to accounts to have their export delivered to an S3 bucket that is not owned by the account.
+* api-change:``emr``: [``botocore``] Add StepExecutionRoleArn to RunJobFlow API
+* api-change:``logs``: [``botocore``] This release adds parameter support to saved queries in CloudWatch Logs Insights. Define reusable query templates with named placeholders, invoke them using start query. Available in Console, CLI and SDK
+* api-change:``sagemaker``: [``botocore``] Release support for ml.r5d.16xlarge instance types for SageMaker HyperPod
+* api-change:``timestream-influxdb``: [``botocore``] Timestream for InfluxDB adds support for customer defined maintenance windows. This allows customers to define maintenance schedule during resource creation and updates
+
+
 1.42.76
 =======
 
